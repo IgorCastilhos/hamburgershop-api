@@ -25,17 +25,17 @@ bun dev
 
 > The **summary** of the features is listed below. All the features contains E2E tests.
 
-[  ] it should be able to **register a new restaurant**  
-[  ] it should be able to **sign in as a restaurant manager**  
-[  ] it should be able to **register as a new customer**  
-[  ] it should be able to **create an order to the restaurant**  
-[  ] it should be able to **manage the restaurant menu**  
-[  ] it should be able to **manage the restaurant evaluations**  
-[  ] it should be able to **leave an evaluation**  
-[  ] it should be able to **manage the restaurant orders**  
-[  ] it should be able to **update the restaurant public profile** 
-[  ] it should be able to **open/close the restaurant** 
-[  ] it should be able to **list metrics from the restaurant**
+[ x ] it should be able to **register a new restaurant**  
+[ x ] it should be able to **sign in as a restaurant manager**  
+[ x ] it should be able to **register as a new customer**  
+[ x ] it should be able to **create an order to the restaurant**  
+[ x ] it should be able to **manage the restaurant menu**  
+[ x ] it should be able to **manage the restaurant evaluations**  
+[ x ] it should be able to **leave an evaluation**  
+[ x ] it should be able to **manage the restaurant orders**  
+[ x ] it should be able to **update the restaurant public profile** 
+[ x ] it should be able to **open/close the restaurant** 
+[ x ] it should be able to **list metrics from the restaurant**
 
 ## Author
 
