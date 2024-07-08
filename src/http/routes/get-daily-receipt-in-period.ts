@@ -56,8 +56,8 @@ export const getDailyReceiptInPeriod = new Elysia().use(authentication).get(
             if (monthA === monthB) {
                 return dayA - dayB
             } else {
-                const dateA = new Date(2023, monthA - 1)
-                const dateB = new Date(2023, monthB - 1)
+                const dateA = new Date(2024, monthA - 1)
+                const dateB = new Date(2024, monthB - 1)
 
                 return dateA.getTime() - dateB.getTime()
             }
