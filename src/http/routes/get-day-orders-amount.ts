@@ -1,3 +1,17 @@
+/* 07/07/2024 - Igor Castilhos
+*  The `getDayOrdersAmount` function, set up with
+*  Elysia and protected by authentication middleware,
+*  calculates and returns the total number of orders
+*  for the current day and the percentage difference
+*  from the previous day's orders for a managed
+*  restaurant. It uses `dayjs` for date manipulation,
+*  `drizzle-orm` for database queries to count orders
+*  based on their creation date, and compares today's
+*  order count with yesterday's to calculate
+*  the difference, returning both the count and the
+*  difference.
+*/
+
 import Elysia from 'elysia'
 import { authentication } from '../authentication'
 import { and, count, eq, gte, sql } from 'drizzle-orm'
