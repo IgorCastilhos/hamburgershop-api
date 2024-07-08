@@ -1,3 +1,33 @@
+/* 07/07/2024 Igor Castilhos
+
+* This code defines a secure, authenticated route for
+* approving orders, with validation and error handling.
+*
+* Route Definition: An instance of Elysia is created
+* and the authentication middleware is applied using
+* .use(). This ensures that the route is protected and
+* only accessible to authenticated users. The .patch()
+* method is used to define a PATCH route. This route is
+* intended to change the status of an order to 'processing'
+* if it's currently 'pending'. The route handler receives
+* an object with methods and properties. params contains
+* route parameters, in this case, the order ID.
+*
+* Route Handler Logic:
+* Extracts the order ID from the route parameters.
+* Retrieves the restaurant ID associated with the current
+* user by calling getManagedRestaurantId(). Queries the
+* database for the order using the provided order ID and
+* restaurant ID. It will find the first order that matches
+* the criteria.
+*
+* Route Parameters Validation:
+* The route expects a parameters object with an 'id' field
+* of type string. This is defined using the t.Object and
+* t.String validators from the Elysia package, ensuring that
+* the route parameter conforms to the expected format.
+*/
+
 import Elysia, { t } from 'elysia'
 import { authentication } from '../authentication'
 import { db } from '@/db/db'
