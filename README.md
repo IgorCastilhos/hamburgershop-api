@@ -23,8 +23,6 @@ bun dev
 
 ## Features
 
-> The **summary** of the features is listed below. All the features contains E2E tests.
-
 [x] it should be able to **register a new restaurant**  
 [x] it should be able to **sign in as a restaurant manager**  
 [x] it should be able to **register as a new customer**  
